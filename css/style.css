@@ -1,0 +1,154 @@
+body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    h1, h2, .card-title {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero-section {
+      height: 100vh;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                  url("https://placehold.co/1600x900/2c2c2c/D4AF37?text=Majoyli+Joias");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    .btn-primary {
+      background-color: #D4AF37;
+      border: none;
+    }
+
+    .btn-primary:hover {
+      background-color: #b68d2e;
+    }
+
+    footer {
+      background-color: #ffffff;
+    }
+
+    
+#mainNavbar,
+#mainNavbarMobile {
+  height: 80px; 
+}
+
+#mainNavbar .nav-link,
+#mainNavbarMobile .nav-link {
+  line-height: 80px; 
+}
+
+
+.gap-80 {
+    gap: 40px 0px !important;
+}
+
+@media (max-width: 450px) {
+    .gap-80 {
+        gap: 20px 0px !important;
+    }
+}
+
+.gap-100 {
+    gap: 100px 0px !important;
+}
+
+@media (max-width: 450px) {
+    .gap-100 {
+        gap: 40px 0px !important;
+    }
+}
+
+.heading-section {
+    font-size: 32px;
+    letter-spacing: 0.2em;
+    line-height: 48px;
+    color: #000000;
+}
+
+.mt-section {
+    margin-top: 50px;
+}
+
+.text-paragraph {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 820px) {
+    .text-paragraph {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
+
+.font-desc-esp {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    text-align: start;
+}
+
+@media (max-width: 820px) {
+    .font-desc-esp {
+        font-size: 14px;
+        line-height: 150%;
+    }
+}
+
+.font-especialidades {
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+    color: #000000;
+    text-align: start;
+}
+
+@media (max-width: 820px) {
+    .font-especialidades {
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        line-height: 30px;
+    }
+}
+
+.font-titulo-especialidades {
+    font-size: 61px;
+    letter-spacing: 0.1em;
+    line-height: 73px;
+    color: #000000;
+}
+
+@media (max-width: 820px) {
+    .font-titulo-especialidades {
+        font-size: 24px;
+        letter-spacing: 0.1em;
+        line-height: 30px;
+        margin-bottom: 40px;
+    }
+}
+
+.gap-100 {
+    gap: 100px 0px !important;
+}
+
+@media (max-width: 450px) {
+    .gap-100 {
+        gap: 40px 0px !important;
+    }
+}
+
+.text-paragraph {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 820px) {
+    .text-paragraph {
+        font-size: 14px;
+        line-height: 21px;
+    }
+}
