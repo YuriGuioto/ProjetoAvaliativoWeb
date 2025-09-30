@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumina Joias - Joias Exclusivas</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="/css/style.css">
+  <style>
+     footer a {
+  color: black !important;       /* cor padrão */
+  text-decoration: none;         /* remove sublinhado */
+}
+
+footer a:hover {
+  color: #555 !important;        /* cor no hover (cinza suave, pode trocar) */
+  text-decoration: underline;    /* opcional: sublinhado no hover */
+}
+
+footer a:visited {
+  color: black !important;       /* evita azul de link já visitado */
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header com Navbar -->
+  <header>
+    <!-- Navbar Mobile -->
+    <nav class="navbar navbar-expand-lg bg-white d-xl-none fixed-top w-100 shadow" style="z-index: 1020;" id="mainNavbarMobile">
+      <div class="container">
+        <a class="navbar-brand" href="home.html">
+          <img class="logo-top" src="/img/logo.png" alt="Logo Majoyli" height="30">
+        </a>
+        <div class="btn-toolbar d-lg-none gap-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header bg-white">
+            <a class="navbar-brand" href="home.html">
+              <img class="logo-top" src="/img/logo.png" alt="Logo Lumina" height="30">
+            </a>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="sobre.html">A Empresa</a></li>
+              <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos</a></li>
+              <li class="nav-item"><a class="nav-link" href="galeria.html">Galeria</a></li>
+              <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+              <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Navbar Desktop -->
+    <nav class="navbar w-100 p-0 fixed-top d-xl-flex d-none bg-white shadow" id="mainNavbar">
+      <div class="container-fluid px-4">
+        <div class="row w-100 align-items-center text-center">
+          <div class="col-md-5 d-flex justify-content-evenly">
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="sobre.html">A Empresa</a>
+            <a class="nav-link" href="produtos.html">Produtos</a>
+          </div>
+          <div class="col-2 d-flex justify-content-center">
+            <a href="home.html">
+              <img class="logo-top" src="/img/logo.png" alt="Logo Majoyli" height="64">
+            </a>
+          </div>
+          <div class="col-md-5 d-flex justify-content-evenly">
+              <a class="nav-link" href="galeria.html">Galeria</a>
+              <a class="nav-link" href="contato.html">Contato</a>
+              <a class="nav-link" href="blog.html">Blog</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+<!-- Espaço para não sobrepor conteúdo -->
+    <div class="navbar-spacer" style="height: 60px;"></div>
+  </header>
+
+  <main>
+    <div class="d-flex flex-column justify-content-center align-items-center p-0 m-0 banner-mobile bg-banner">
+    <div class="image-banner w-100 h-100">
+        <img src="/img/banner-6.png" loading="lazy" alt="Imagem da clínica" class="img-fluid w-100 d-none d-md-flex">
+        <img src="/img/banner-6.png" loading="lazy" alt="Imagem da clínica" class="img-fluid w-100 d-md-none d-flex" />
+    </div>
+</div>
+    
+<div class="container mt-section ">
+    <div class="row">
+        <div class="col-lg-12 col-xl-5 col-md-12 col-12 d-flex flex-column" style="gap: 40px;">
+            <h2 class="heading-section d-flex">A lumina Joias</h2>
+            <div class="w-100 d-xl-none d-flex d-md-flex d-lg-flex justify-content-center">
+
+                <img src="/img/lumina-presentation.png" style="width: 330px; height: 300px; border-radius: 25px;" loading="lazy" alt="fachada clínica" />
+
+            </div>
+
+            <p class="d-flex text-paragraph">
+            A nossa joalheria nasceu de um propósito maior: transformar momentos em eternidade e sentimentos em peças únicas. Mais do que criar joias, buscamos eternizar histórias, traduzindo em brilho e delicadeza tudo aquilo que há de mais especial na vida.
+            Com um olhar minucioso, unimos tradição artesanal e inovação contemporânea para oferecer coleções que refletem sofisticação, beleza e autenticidade. Cada joia é cuidadosamente pensada para encantar, emocionar e se tornar parte da sua jornada.
+            </p>
+        </div>
+        <div class="col-md-7 col-12 d-none d-md-none d-lg-none d-xl-flex">
+            <img class="img-fluid" style="width: 761px; height: 535px; border-radius: 25px;" loading="lazy" src="/img/lumina-presentation.png" alt="Fachada clínica" />
+        </div>
+    </div>
+</div>
+
+<div class="container mt-section mb-5">
+    <h2 class="text-center font-titulo-especialidades col-md-12 col-12 mb-5">ESPECIALIDADES</h2>
+    <div class="row gx-lg-5 gap-100">
+
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column align-items-center align-items-md-start align-items-lg-start">
+                <h3 class="font-especialidades m-0 d-md-none">Design Exclusivo</h3>
+                <h3 class="font-especialidades m-0 d-none d-md-block">Design </br>Exclusivo </h3>
+          <p class="font-desc-esp">Criações autorais que unem tendências contemporâneas com a tradição da alta joalheria. Cada joia é única, feita para refletir sua personalidade e estilo.</p>      
+        </div>
+
+      <div class="col-lg-4 col-md-6 col-12 d-flex flex-column align-items-center align-items-md-start text-center text-break align-items-lg-start">
+                <h3 class="font-especialidades m-0 d-md-none">Pedras de Alta Qualidade</h3>
+                <h3 class="font-especialidades m-0 d-none d-md-block">Pedras de<br />Alta Qualidade</h3>
+                <p class="font-desc-esp">Trabalhamos apenas com gemas selecionadas, garantindo brilho, pureza e autenticidade em cada detalhe. Um compromisso com a excelência que valoriza cada peça.</p>      
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column align-items-md-start align-items-center text-center">
+                <h3 class="font-especialidades m-0 d-md-none" >
+                   Joias Sob Medida</h3>
+                <h3 class="font-especialidades m-0 d-none d-md-block">
+                    Joias <br />Sob Medida
+                </h3>
+                <p class="font-desc-esp">Transformamos ideias e sentimentos em joias personalizadas. Do esboço ao acabamento, cada etapa é feita com cuidado para criar algo verdadeiramente especial.</p>     
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column align-items-md-start align-items-center text-center">
+                <h3 class="font-especialidades m-0 d-md-none">
+                  Restauração e Ajustes
+                </h3>
+                <h3 class="font-especialidades m-0 d-none d-md-block">
+                    Restauração <br />
+                    e Ajustes
+                </h3>
+               <p class="font-desc-esp">Damos nova vida às suas joias, preservando a história e o valor sentimental de cada peça com técnicas modernas de restauração e ajustes precisos.</p>     
+         </div>
+
+        <div class="col-lg-4 col-md-6 col-12 d-flex flex-column align-items-md-start align-items-center text-center">
+                <h3  class="font-especialidades m-0 d-md-none">
+                   Experiência Completa
+                </h3>
+                <h3 class="font-especialidades m-0 d-none d-md-block">
+                   Experiência <br />Completa
+                </h3>  
+                <p class="font-desc-esp">Mais do que vender joias, criamos memórias. Do atendimento personalizado à embalagem sofisticada, cada detalhe é pensado para encantar.</p>     
+      </div> 
+    </div>
+</div>
+<div class="container mt-section">
+    <div class="row justify-content-between align-items-center">
+        <div class="col-md-5 col-12 doctor-image-container">
+            <img src="/img/laura-dona.png" style="border-radius: 25px;" loading="lazy" alt="Imagem dona da loja Laura" class="img-fluid d-none d-md-flex" />
+        </div>
+        <div class="col-md-7 col-12 d-flex flex-column doctor-content-container" style="gap: 30px;">
+            <div class="row m-0 p-0">
+                <div class="col-md-12 col-12 d-flex flex-column p-0 m-0">
+                    <div class="d-flex flex-column" style="max-width: max-content; gap: 15px;">
+                        <h3 class="p-0 m-0 text-highlight">Laura Ferreira</h3>
+                        <h3 class="text-end p-0 m-0 heading-role justify-content-center">Fundadora & Diretora criativa</h3>
+                        <div class="d-md-none">
+                            <img src="/img/laura-dona.png"
+                                 height="232"
+                                 width="330"
+                                 class="d-block mx-auto" loading="lazy" alt="Imagem dona da loja Laura Mobile" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text-paragraph">
+            Com olhar apurado para a beleza e mais de uma década de dedicação ao universo da joalheria, 
+            <strong>Laura</strong> é a mente criativa e visionária por trás da nossa marca. <br>
+            Reconhecida por sua paixão em transformar sentimentos em joias únicas, 
+            ela une tradição, sofisticação e inovação para entregar peças que eternizam momentos especiais.
+            Com sensibilidade e compromisso em cada detalhe, Laura conduz a joalheria com o propósito 
+            de oferecer não apenas acessórios de luxo, mas símbolos de histórias, conquistas e afetos que duram para sempre.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid mt-section bg-jewelry-promo jewelry-section" style="margin-bottom: 140px;">
+    <div class="container">
+        <div class="row">
+            <!-- Texto + Botão -->
+            <div class="col-md-12 col-xl-5 col-lg-12 col-12 m-0 p-0 d-flex flex-column gap-80">
+                <div class="col-md-12 col-12 d-flex flex-column mt-section">
+                    <h2 class="font-titulo-especialidades-white">
+                        QUEM ESCOLHE
+                        <br class="d-none d-lg-block" />
+                        ETERNIZAR MOMENTOS,
+                        <br class="d-none d-lg-block" />
+                        ESCOLHE <span class="text-highlight">NOSSAS JOIAS</span>
+                    </h2>
+                    <h3 class="text-nowrap heading-section-white agende-consulta-text" >
+                        DESCUBRA NOSSA COLEÇÃO
+                    </h3>
+                </div>
+                <p class="text-paragraph" style="color: rgb(0, 0, 0);">
+                    Cada joia carrega consigo mais do que brilho e beleza — ela traz histórias, sentimentos e conquistas. 
+                    Nossa missão é transformar momentos especiais em peças eternas, criadas com excelência, sofisticação e exclusividade.  
+                    Descubra a coleção que vai marcar o próximo capítulo da sua vida.
+                </p>
+                <a href="/pages/produtos.html" target="_blank" 
+                   class="btn d-flex icon-link-hover align-items-center btn-agendamento text-uppercase" >
+                    <h3 class="btn-font">Conheça nossa coleção</h3>
+                </a>
+                <img class="col-12 d-xl-none d-block img-fluid" loading="lazy" 
+                     src="/img/colecao.png" 
+                     alt="Coleção de joias exclusivas" width="330" height="232" />
+            </div>
+            <!-- Imagem Principal -->
+            <div class="col-xl-6 offset-md-1">
+                <img class="mt-section d-md-none d-none d-lg-none d-xl-flex" style="border-radius: 25px;" loading="lazy" 
+                     src="/img/colecao.png" 
+                     alt="Coleção de joias exclusivas" width="847" height="595" />
+            </div>
+        </div>
+    </div>
+</div>
+
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 font-titulo-especialidades">Destaques da Semana</h2>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="/img/anel-1.png" class="card-img-top" alt="Anel de ouro com design moderno">
+              <div class="card-body text-center">
+                <h5 class="card-title">Anel Aura</h5>
+                <p class="card-text">Um toque de sofisticação para o seu dia a dia.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="/img/colar-2.png" class="card-img-top" alt="Colar delicado com pingente">
+              <div class="card-body text-center">
+                <h5 class="card-title">Colar Luz</h5>
+                <p class="card-text">Ilumine seu visual com nossa peça mais delicada.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="/img/brinco-2.png" class="card-img-top" alt="Par de brincos elegantes">
+              <div class="card-body text-center">
+                <h5 class="card-title">Brincos Seren</h5>
+                <p class="card-text">A combinação perfeita de design clássico e moderno.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO BLOG -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 font-titulo-especialidades">Últimas do Blog</h2>
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <a href="pagina-blog-1.html" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 blog-card">
+            <img src="/img/blog-1.png" class="card-img-top" alt="Tendências em joias">
+            <div class="card-body">
+              <h5 class="card-title">Tendências em Joias 2025</h5>
+              <p class="card-text">Descubra as peças que estarão em alta e como usá-las com elegância.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <a href="pagina-blog-2.html" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 blog-card">
+            <img src="/img/blog-2.png" class="card-img-top" alt="Cuidados com joias">
+            <div class="card-body">
+              <h5 class="card-title">Como Cuidar das Suas Joias</h5>
+              <p class="card-text">Dicas essenciais para manter suas joias brilhantes por muito mais tempo.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <a href="pagina-blog-3.html" class="text-decoration-none text-dark">
+          <div class="card shadow-sm border-0 h-100 blog-card">
+            <img src="/img/blog-3.png" class="card-img-top" alt="História das joias">
+            <div class="card-body">
+              <h5 class="card-title">História das Joias</h5>
+              <p class="card-text">Um olhar fascinante sobre como as joias marcaram culturas e épocas.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Efeito hover nos cards do blog */
+  .blog-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3); /* sombra dourada */
+  }
+</style>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-black text-center py-4">
+    <footer class="w-100 section-spacing">
+    <div class="container pt-5 pb-4">
+        <div class="row align-items-start">
+            <div class="col-lg-3 col-md-6 col-12 mb-5 mb-lg-0 d-flex justify-content-center justify-content-md-start">
+                <div style="width: max-content">
+                    <img src="/img/logo.png" alt="">
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-6 col-12 mb-5 mb-lg-0 text-center text-md-start">
+                <h3 class="mb-4" style="margin-bottom: 40px; color:black;">LINKS RÁPIDOS</h3>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="text-link text-decoration-none d-block footer-font" href="/home.html">Home</a>
+                        <a class="text-link text-decoration-none d-block footer-font"  href="/sobre.html">A Empresa</a>
+                        <a class="text-link text-decoration-none d-block footer-font" href="/produtos.html">Produtos</a>
+                    </div>
+                    <div class="col-6">
+                        <a class="text-link text-decoration-none d-block footer-font" href="/galeria.html">Galeria</a>
+                        <a class="text-link text-decoration-none d-block footer-font" href="/contato.html">Contato</a>
+                        <a class="text-link text-decoration-none d-block footer-font" href="/blog.html">Blog</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-lg-5 mt-0 text-center text-reset"><span class="font-cookie">Copyright © 30/09/2025  - <a class="text-decoration-none text-reset font-cookie" href="/pages/privacidade.html">Política de privacidade</a> - <span class="font-cookie" >Desenvolvido por:</span> <a class="fw-bold font-cookie text-decoration-none text-reset" href="" target="_blank">Yuri e Walter</a></span></div>
+        </div>
+    </div>
+</footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
